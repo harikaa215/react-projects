@@ -5,7 +5,7 @@ const RestaurantContainer = ({resData}) =>{
 
   
   return (
-    <div className="restaurant_container">
+    <div className="flex flex-wrap">
         {resData.length > 0 && resData.map ((restaurant) => {
             return <Restaurant key={restaurant.info.id} resData = {restaurant}/>
         })}

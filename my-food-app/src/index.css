@@ -1,6 +1,13 @@
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* body {
   margin: 0;
   padding: 0;
+}
+*{
+  box-sizing: border-box;
 }
 
 .header {
@@ -31,14 +38,15 @@ body {
   flex-direction: column;
   font-size: 16px;
   width: 24%;
-  justify-content: baseline;
+  justify-content: flex-end;
   border-radius: 5px;
-  line-height: 0.05em;
-  padding: 3px;
-  height: 350px;
-}
+  /* line-height: 0.05em; */
+  /* padding: 3px;
+  height: 350px; */
+  /* overflow: hidden; */
+/* } */
 
-.restaurant_card:hover{
+/* .restaurant_card:hover{
   border: 1px solid lightcoral;
   cursor: pointer;
 }
@@ -68,10 +76,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   /* justify-content: center; */
-  align-items: center;
-}
+  /* align-items: center; */
+/* } */
 
-.ratings{
+/* .ratings{
   font-weight: 550;
 }
 
@@ -119,7 +127,36 @@ body {
 }
 
 .restaurant_card .cuisines{
- width: 90%;
- text-overflow: clip;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 200px;
+  text-overflow: ellipsis;
+  word-break:break-all
   
 }
+
+h1,h2,h3,h4{
+  margin-bottom: 1px;
+}
+p{
+  margin: 5px;
+}
+
+.menu{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  margin: auto;
+}
+
+.menu > img{
+  margin-top: 10px;
+  width: 400px;
+  height: 250px;
+}
+
+a{
+  text-decoration: none;
+}  */

@@ -12,8 +12,8 @@ const Search = ({restaurants, setFilteredRestaurants}) => {
 
 
   return (
-    <div className='search_menu'>
-        <input type="text" className="search" placeholder='Search for Restaurant and food....' value={searchText} onChange={(e)=>{setSearchText(e.target.value)}}/>
+    <div>
+        <input type="text" placeholder='Search for Restaurant and food....' value={searchText} onChange={(e)=>{setSearchText(e.target.value)}}/>
         <button onClick={handleSearch}>Search</button>
     </div>
   )
