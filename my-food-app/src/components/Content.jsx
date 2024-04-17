@@ -42,7 +42,7 @@ const Content = () => {
 
   return (
     <div className="flex flex-col">
-      <div className="flex">
+      <div className="flex items-center justify-center">
         <Filter restaurants={restaurants} setRestaurants={setRestaurants} />
         <Search
           restaurants={restaurants}
